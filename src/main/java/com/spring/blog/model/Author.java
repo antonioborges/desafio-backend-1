@@ -16,6 +16,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Table(name = "authors")
 public class Author {
   
-  // TODO
+  // TODO com os campos id (long auto incremento), name (string) e createdAt (LocalDate), e seus métodos getters, setters, toString, hashCode e equals
 
 }

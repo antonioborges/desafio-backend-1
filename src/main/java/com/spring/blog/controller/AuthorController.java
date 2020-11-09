@@ -25,14 +25,14 @@ public class AuthorController {
   @RequestMapping(value = "/authors", method = RequestMethod.GET)
   public ModelAndView getAuthors() {
     ModelAndView modelAndView = new ModelAndView("authors");
-    // TODO
+    // TODO recuperar lista de autores
     return modelAndView;
   }
 
   @RequestMapping(value = "/authors/{id}", method = RequestMethod.GET)
   public ModelAndView getAuthorDetails(@PathVariable("id") long id) {
     ModelAndView modelAndView = new ModelAndView("authorDetails");
-    // TODO
+    // TODO recuperar dados do autor por id
     return modelAndView;
   }
 
@@ -43,7 +43,7 @@ public class AuthorController {
 
   @RequestMapping(value = "/newauthor", method = RequestMethod.POST)
   public String saveAuthor(@Valid Author author, BindingResult result, RedirectAttributes attributes) {
-    // TODO
+    // TODO salvar o autor e caso erro apresentar uma mensagem para o usuario
     return "redirect:/authors";
   }
 }
